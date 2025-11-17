@@ -1,0 +1,153 @@
+/* --- Bendri nustatymai --- */
+body {
+    background-color: #F7F7F7; 
+    font-family: "Georgia", "Times New Roman", Times, serif; 
+    color: #1a1a1a;
+    line-height: 1.7;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* --- Pagrindinis programėlės "langas" --- */
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    padding: 30px 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #EFEFEF;
+    padding-bottom: 8px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+/* --- Paslėpta klasė (funkcinė) --- */
+.hidden {
+    display: none;
+}
+
+/* --- Citatos / Teksto blokai --- */
+.passage-box {
+    background: #F9F9F9;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 1.15em;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* --- Mygtukai --- */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: translateY(1px); 
+}
+
+button.secondary {
+    background-color: #6c757d;
+}
+
+button.secondary:hover {
+    background-color: #5a6268;
+}
+
+/* --- Teksto įvesties laukai --- */
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 1.05em;
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    line-height: 1.6;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-top: 10px;
+    resize: vertical;
+}
+
+/* --- Atsiliepimų pranešimai (Step 2) --- */
+#replicate-feedback {
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* --- "Mad Libs" įvesties laukai (Step 3) --- */
+.apply-input {
+    border: none;
+    border-bottom: 2px solid #007bff;
+    padding: 4px 8px;
+    font-size: 0.95em;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    background: #f0f7ff;
+    border-radius: 4px;
+    margin: 0 4px;
+    min-width: 100px;
+    text-align: center;
+}
+
+/* --- NAUJAS STILIUS FILTRUI --- */
+.filter-container {
+    background-color: #F8F9FA;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-container label {
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.9em;
+    margin-right: 15px;
+    color: #333;
+}
+
+.filter-container select {
+    padding: 8px 12px;
+    font-size: 0.9em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background-color: #FFF;
+    flex-grow: 1; /* Užima likusią vietą */
+}

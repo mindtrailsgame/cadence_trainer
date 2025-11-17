@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadence Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadence Trainer</h1>
+
+        <div class="filter-container">
+            <label for="tag-filter">Filter by tag:</label>
+            <select id="tag-filter" onchange="filterPassages()">
+                <option value="all">All Passages</option>
+                </select>
+        </div>
+
+        <div id="step-observe">
+            <h2>1. Observe</h2>
+            <blockquote id="observe-passage" class="passage-box">
+                </blockquote>
+            <button onclick="goToReplicateStep()">Next: Replicate</button>
+        </div>
+
+        <div id="step-replicate" class="hidden">
+            <h2>2. Replicate</h2>
+            <p>Re-type the passage from memory:</p>
+            <textarea id="replicate-input" rows="5" placeholder="Type the passage here..."></textarea>
+            <p id="replicate-feedback"></p>
+            <button onclick="checkReplication()">Check</button>
+            <button onclick="showHint()" class="secondary">Hint</button>
+        </div>
+
+        <div id="step-apply" class="hidden">
+            <h2>3. Apply</h2>
+            <p>Fill in the blanks with your own words:</p>
+            <div id="apply-template" class="passage-box">
+                </div>
+            <button onclick="startOver()">Start Over (New Passage)</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
